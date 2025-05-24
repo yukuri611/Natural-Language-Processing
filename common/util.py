@@ -53,8 +53,8 @@ def ppmi(C, verbose, eps = 1e-8):
 
             if verbose:
                 cnt += 1
-                if cnt % total // 10 == 0:
-                    print(f'{round(cnt * 100 / total, 1)}% done')
+                if cnt % (total // 10) == 0:
+                    print(f'{round(cnt * 100 / total, 0)}% done')
     
     return M
             
