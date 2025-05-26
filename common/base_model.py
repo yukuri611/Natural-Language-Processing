@@ -1,9 +1,10 @@
 # coding: utf-8
 import sys
-sys.path.append('.')
+sys.path.append('..')
 import os
 import pickle
-import numpy as np
+from common.np import *
+from common.util import to_gpu, to_cpu
 
 
 class BaseModel:
